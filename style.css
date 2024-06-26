@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'iranyekan';
+    src: url(fonts/yekan-font/yekan-regular.woff) format('woff');
+}
+html {
+    font-family: 'iranyekan';
+}
+body {
+    background-color: #f0f0f0;
+    color: #222;
+    font-family: 'iranyekan', sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+header,
+footer {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 0;
+    background-image: url("https://images.unsplash.com/photo-1513002775686-a757105a7d55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.portfolio {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.portfolio-item {
+    display: inline-block;
+    margin: 10px;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.bio {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.bio p {
+    font-size: 1.2em;
+}
+
+.create {
+    padding: 40px 0;
+}
+.create h2 {
+    text-align: center;
+}
+
+.create form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create input,
+.create textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.create button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create button:hover {
+    background-color: #0056b3;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: #007bff;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.login {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.form-container {
+    display: inline-block;
+    width: 300px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.login button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login button:hover {
+    background-color: #0056b3;
+}
+
+#toggle-text {
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+#toggle-link {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.glass-effect {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.about-me {
+    display: felx;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: o auto;
+    text-align: center;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ساخت حساب</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="about.html">درباره من</a></li>
+                <li><a href="login.html">ثبت نام</a></li>
+                <li><a href="create.html">پست</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="login">
+            <div class="form-container">
+                <h2 id="form-title">ثبت نام</h2>
+                <form id="signupForm">
+                    <input type="text" id="signupName" placeholder="نام" required>
+                    <input type="email" id="signupEmail" placeholder="ایمیل" required>
+                    <input type="text" id="signupUsername" placeholder="نام کاربری" required>
+                    <input type="password" id="signupPassword" placeholder="رمز عبور" required>
+                    <input type="password" id="signupConfirmPassword" placeholder="تکرار رمز عبور" required>
+                    <button type="submit">ساخت حساب کاربری</button>
+                </form>
+
+                <div id="notice" style="display: none; margin-top: 10px;">
+                    <p id="notice-message"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; تمامی حقوق این سایت متعلق به امیر محمد اسماعیلی می باشد.</p>
+    </footer>
+    <script src="loginScript.js"></script>
+</body>
+
+</html>
